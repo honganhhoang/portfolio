@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Lia's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <script src="js/animation.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Primary navigation">
+    <a href="index.html" aria-label="Lia's portfolio homepage">
+      <img src="asset/img/cat7.png" alt="Cat logo representing Lia's portfolio" class="logo" />
+    </a>     
+    <div class="nav-links">
+      <a href="index.html" role="link">Home</a>
+      <a href="projects.html" role="link">Projects</a>
+      <a href="contact.html" role="link">Contact</a>
+    </div>
+  </nav>
+
+  <section class="contact-section" aria-labelledby="contact-heading" role="region">
+  <h1 id="contact-heading">Contact Me</h1>
+  <p>I'd love to hear from you! Please fill out the form below to get in touch.</p>
+
+  <form id="contact-form" aria-describedby="form-instructions" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" aria-describedby="name-desc"/>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required aria-required="true" aria-describedby="email-desc"/>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required aria-required="true" aria-describedby="message-desc"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      window.location.href = 'mailto:hah4@sfu.ca?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dress Code | Lia's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/project-page.css" />
+  <script src="js/animation.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="Primary navigation">
+    <a href="index.html" aria-label="Lia's portfolio homepage">
+        <img src="asset/img/cat9.png" alt="Cat logo representing Lia's portfolio" class="logo" />
+    </a>     <div class="nav-links">
+      <a href="index.html" role="link">Home</a>
+      <a href="projects.html" role="link">Projects</a>
+            <a href="contact.html" role="link">Contact</a>
+
+    </div>
+  </nav>
+
+  <main>
+    <section class="project-page" aria-label="Dress Code project details">
+    <h1>Dress Code </h1>
+    <h2>UI/Visual Design & Interactive Simulation</h2>
+    <div class="project-intro">
+      <p><strong>Project Type:</strong> School Project (IAT 267 - Intro to Game Design)</p>
+      <p><strong>Date:</strong> March 2025 – April 2025 (1 month)</p>
+      <p><strong>Tools Used:</strong> Eclipse, Java, Figma, Photoshop</p>
+      <p><strong>Skills:</strong> UI design, state-based programming, digital illustration, drag-and-drop interaction, audiovisual design</p>
+      <p><strong>Role:</strong> Visual Designer & Developer</p>
+    </div>
+
+    <div class="project-overview">
+      <h2>Overview</h2>
+      <p><em>Dress Code</em> is a cozy, interactive dress-up simulation that lets players style characters using drag-and-drop mechanics. It combines hand-drawn visuals, playful animations, and a seamless UI to create an experience that’s both nostalgic and creatively expressive.</p>
+      
+      <div class="project-media">
+        <img src="asset/img/dresscode3.png" alt="Screenshot of Dress Code interface" />
+        <p class="caption">Dress Code gameplay UI featuring draggable clothing items and cozy visuals</p>
+      </div>
+    </div>
+
+    <div class="project-problem">
+      <h2>Project Objective</h2>
+      <p>The goal was to design an interactive game that encourages creative exploration through fashion. I wanted the experience to feel calming, familiar, and expressive, like flipping through a childhood paper doll book. The challenge was to combine visual design with responsive interaction in a way that felt smooth and emotionally engaging.</p>
+    </div>
+
+    <div class="project-solution">
+      <h2>Design Process & Features</h2>
+        <img src="asset/img/dresscode4.png" alt="Screenshot of Dress Code interface" />
+
+      <h3>Visual Language & UI Design</h3>
+      <p>Inspired by my own wardrobe, all clothing assets were hand-drawn and digitally illustrated to reflect a soft, vintage tone. I used warm color palettes and soft outlines to evoke a cozy, nostalgic feel. UI elements were designed with minimal styling so the focus would stay on the outfits and avatar.</p>
+
+      <div class="project-media">
+        <p class="caption">Wireframes and visual explorations testing cozy aesthetics</p>
+      </div>
+
+      <h3>Drag-and-Drop Interaction</h3>
+      <p>I programmed a custom drag-and-drop system in Java using a state-based structure. Clothing items could be moved and placed with snap-to zones over the avatar. Items had layered logic to allow stacking (e.g. hats over hair, coats over tops), and responsive hover highlights gave users feedback as they played.</p>
+
+      <div class="project-media">
+        <p class="caption">Custom drag-and-drop mechanic in Java</p>
+      </div>
+
+      <h3>Immersive Details</h3>
+      <p>To enhance player immersion, I added atmospheric features like a day-and-night window background that changed as time passed. Audio elements were also implemented — sound effects played as users clicked and dressed the character, while calm background music created a cozy ambiance.</p>
+    </div>
+
+    <div class="project-challenges">
+      <h2>Challenges & Iterations</h2>
+
+      <h3>Interaction & Feedback</h3>
+      <p>Initial versions lacked drag feedback, so users couldn’t tell if they were interacting correctly. I added glowing outlines on hover, snapping animations, and drop shadows to improve responsiveness.</p>
+
+      <h3>Layering Complexity</h3>
+      <p>Handling overlapping clothes without glitching (e.g. hair covering hats) required rewriting the item hierarchy. I implemented z-index logic using draw order arrays to fix this.</p>
+
+      <h3>Synchronizing Audio</h3>
+      <p>Audio feedback was inconsistent at first. Some sounds were delayed or triggered multiple times. I solved this by throttling the sound calls and preloading assets in memory to reduce latency.</p>
+
+      <h3>Screen Transitions</h3>
+      <p>Moving between intro, gameplay, and ending screens caused crashes early on. I resolved this by modularizing screen states using an enum-based controller that preserved game data during state transitions.</p>
+    </div>
+
+    <div class="project-outcome">
+      <h2>Project Outcome</h2>
+      <p><em>Dress Code</em> was praised by classmates and test users for its whimsical art and simple, polished interactions. Many users commented on the personal feeling of the wardrobe — which made sense, since each piece was inspired by clothes I actually own. This project helped me realize the power of merging art and code to create emotionally engaging experiences.</p>
+    </div>
+
+    <div class="project-takeaways">
+      <h2>Takeaways</h2>
+      <ul>
+        <li>Combining illustration with programming allows for deeply personal and expressive design.</li>
+        <li>Audio and subtle motion can enhance atmosphere and user comfort without overwhelming.</li>
+        <li>Careful interaction design (even for small elements like drag feedback) makes a big impact.</li>
+        <li>Modular programming and early prototyping helped prevent late-stage bugs and crashes.</li>
+      </ul>
+    </div>
+  </section>
+  </main>
+</body>
+</html>

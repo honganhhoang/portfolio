@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Princess Quest | Lia's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/project-page.css" />
+  <script src="js/animation.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Primary navigation">
+    <a href="index.html" aria-label="Lia's portfolio homepage">
+      <img src="asset/img/cat8.png" alt="Cat logo representing Lia's portfolio" class="logo" />
+    </a>     
+    <div class="nav-links">
+      <a href="index.html" role="link">Home</a>
+      <a href="projects.html" role="link">Projects</a>
+      <a href="contact.html" role="link">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="project-page" aria-label="Princess Quest game project details">
+    <header>
+      <h1 tabindex="0">Princess Quest</h1>
+      <h2 tabindex="0">2D Pixel Platformer Game</h2>
+
+      <div class="project-intro-wrapper">
+        <div class="project-title-image">
+          <img src="asset/img/princessquest3.png" alt="Princess Quest title banner" />
+        </div>
+
+        <section aria-label="Project summary" class="project-intro">
+          <p><strong>Project Type:</strong> Solo Project</p>
+          <p><strong>Date:</strong> July 2024 – August 2024 (1 month)</p>
+          <p><strong>Tools Used:</strong> p5.js, Photoshop, Canva</p>
+          <p><strong>Skills:</strong> JavaScript programming, platformer mechanics, pixel art, animation, collision detection</p>
+          <p><strong>Role:</strong> Game Designer, Developer & Artist</p>
+        </section>
+      </div>
+    </header>
+
+      <section aria-labelledby="overview-heading">
+        <h2 id="overview-heading">Project Overview</h2>
+        <p>
+          <em>Princess Quest</em> is a nostalgic 2D platformer built with p5.js for an IAT 167 course. It challenges players to guide a princess through haunted pixel art environments, overcoming ghost enemies and collecting keys and hearts to advance through levels. I was responsible for all aspects of visual design and programming, combining creative storytelling with technical game mechanics.
+        </p>
+      </section>
+
+      <section aria-labelledby="design-process-heading">
+        <h2 id="design-process-heading">Design Process & Visual Development</h2>
+
+        <figure>
+          <img src="asset/img/princessquest-concept.png" alt="Concept art showing haunted forest background and level layout" />
+          <figcaption>Initial sketch of the game layout</figcaption>
+        </figure>
+
+        <p>
+          The project began with outlining core gameplay mechanics and visual style. I mapped out platform types (solid, moving, disappearing), enemy behavior, and collectible items through sketches to establish a clear game flow before implementation.
+        </p>
+
+        <h3>Character & Item Sketches</h3>
+        <div class="sketches" role="list">
+          <figure role="listitem">
+            <img src="asset/img/princessquest-princess.png" alt="Sketch animation frames showing walk cycle of princess character" />
+            <figcaption>Princess character walk cycle sketches</figcaption>
+          </figure>
+            <figure role="listitem">
+            <img src="asset/img/princessquest-heart.png" alt="Sketch of heart collectible item" />
+            <figcaption>Heart collectible item sketch</figcaption>
+          </figure>
+          <figure role="listitem">
+            <img src="asset/img/princessquest-ghost.png" alt="Sketch animation frames depicting ghost enemy movements" />
+            <figcaption>Ghost enemy animation sketches</figcaption>
+          </figure>
+          <figure role="listitem">
+            <img src="asset/img/princessquest-key.png" alt="Sketch of key collectible item" />
+            <figcaption>Key collectible item sketch</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="screenshots-heading">
+        <h2 id="screenshots-heading">Gameplay Screenshots</h2>
+        <figure>
+          <img src="asset/img/princessquest1.png" alt="Gameplay screenshot with princess avoiding ghost enemies on platforms" />
+          <figcaption>Gameplay with ghosts and platforms</figcaption>
+        </figure>
+      </section>
+
+      <section aria-labelledby="final-scene-heading">
+        <h2 id="final-scene-heading">Final Scene</h2>
+        <figure>
+          <img src="asset/img/princessquest-screens.png" alt="Final scene showing princess and prince reunion" />
+          <figcaption>Final scene of Princess Quest</figcaption>
+        </figure>
+      </section>
+
+
+      <section aria-labelledby="features-heading">
+        <h2 id="features-heading">Key Features & Technical Highlights</h2>
+
+        <h3>Pixel Art & Animation</h3>
+        <p>
+          I created all game sprites and animations using a custom pixel art palette, inspired by SNES-era platformers but personalized with unique walk cycles, jump states, and idle animations for the princess.
+        </p>
+
+        <h3>Game Mechanics & Programming</h3>
+        <p>
+          Built in p5.js, the game features gravity physics, jump mechanics, collision detection, and enemy AI with preset or random movement patterns. I modularized code to ensure ease of debugging and future scalability.
+        </p>
+
+        <h3>Audio & Atmosphere</h3>
+        <p>
+          Dynamic day/night background changes and layered ambient sounds enhance immersion. Sound effects for jumps, ghost encounters, and success events reinforce feedback loops.
+        </p>
+      </section>
+
+      <section aria-labelledby="challenges-heading">
+        <h2 id="challenges-heading">Challenges & Solutions</h2>
+        <h3>Collision Bugs</h3>
+        <p>
+          Initial player collision issues, such as sticking to platform edges or falling through, were fixed by refining bounding box checks and manually adjusting player positioning on overlap.
+        </p>
+
+        <h3>Layering & Visual Depth</h3>
+        <p>
+          I carefully sorted drawing order for backgrounds, enemies, and player sprites to maintain clarity and proper visual hierarchy.
+        </p>
+
+        <h3>Sound Playback</h3>
+        <p>
+          To prevent sound effect overload, I implemented throttling and preloading techniques for smooth, lag-free audio.
+        </p>
+      </section>
+
+      <section aria-labelledby="outcome-heading">
+        <h2 id="outcome-heading">Project Outcome</h2>
+        <p>
+          <em>Princess Quest</em> was a successful solo project that strengthened my abilities in game design, pixel art, and programming. The final product received positive feedback for its polished gameplay and engaging visual style.
+        </p>
+      </section>
+
+      <section aria-labelledby="takeaways-heading">
+        <h2 id="takeaways-heading">Key Takeaways</h2>
+        <ul>
+          <li>Balancing mechanics with expressive visuals deepens player engagement.</li>
+          <li>Thoughtful pixel art animation conveys character and personality effectively.</li>
+          <li>Modular, testable code facilitates maintenance and expansion.</li>
+          <li>Audio and visual feedback are critical for player satisfaction in platformers.</li>
+        </ul>
+      </section>
+        <section aria-labelledby="demo-heading">
+        <h2 id="demo-heading">Playable Demo</h2>
+        <p>
+          Try the playable demo of <em>Princess Quest</em> below, or <a href="https://editor.p5js.org/hah4/sketches/ANjyl-_ZA" target="_blank" rel="noopener noreferrer">open it in a new tab</a>.
+        </p>
+        <div class="iframe-container">
+        <iframe
+          src="//editor.p5js.org/hah4/full/ANjyl-_ZA"
+          title="Playable Princess Quest Demo"
+          frameborder="0"
+          allowfullscreen
+          aria-label="Playable demo of Princess Quest game">
+        </iframe>
+        </div>
+
+      </section>
+    </article>
+  </main>
+</body>
+</html>
