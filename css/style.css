@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', serif; 
+  font-size: 16px;
+  line-height: 1.6;
+  color: #9e182b;
+  background-color: #fcf3e3;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+h1{
+  font-family: 'Allura';
+  font-size: 5rem;
+    color: #9e182b;
+
+}
+ h2, h3, h4, h5 {
+  font-family: 'Lora', serif;
+  color: #9e182b;
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: #9e182b;       
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: #f2afbc;       
+  text-decoration-color: #f2afbc;
+  outline: none;   
+}
+
+a:focus-visible {
+  outline: 2px solid #f2afbc; 
+  outline-offset: 2px;
+}
+
+
+footer {
+  padding: 2rem 4rem;
+  text-align: center;
+  background-color: #fef8ec;
+  border-top: 1px solid #ccc;
+  color: #9e182b;
+  margin-top: 4rem;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: #fff3de;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  color: #9e182b;
+}
+
+/* NAVIGATION */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: #fcf3e3;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  box-shadow: 0 2px 5px rgba(130, 74, 74, 0.5);
+}
+
+.logo {
+  height: 5rem;
+}
+
+.nav-links a {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  margin-left: 2.5em;
+  text-decoration: none;
+  color: #9e182b;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #f2afbc;
+}
+
+.buttons {
+ display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #9e182b;
+  border: 0.4rem  double #9e182b;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+align-self: flex-start;
+}
+
+.buttons:hover {
+  color: #fff3de;
+  border-color: #fff3de;
+  transform: scale(1.05);
+}
+
+.vertical-line {
+  width: 0.3rem;
+  background: #dca4a4;
+  margin: 0;     
+  height: auto;    
+  align-self: stretch;  
+}
+@media (max-width: 50rem) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;  
+    padding: 1rem 2rem;
+    gap: 1rem;   
+
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;  
+
+  }
+
+  .nav-links a {
+    margin-left: 0;         
+    margin-bottom: 1rem;      
+    font-size: 1.2rem;       
+  }
+
+  .buttons {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .vertical-line {
+    display: none;            
+  }
+  h1{
+  font-size: 3rem;
+}
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+}

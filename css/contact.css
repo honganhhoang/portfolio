@@ -1,0 +1,108 @@
+    body {
+      font-family: 'Lora', serif;
+      color: #550000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-section {
+      max-width: 50rem;
+      margin: 5rem auto;
+      background-color: #fef8ec;
+      padding: 3rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 1rem 3rem rgba(130, 74, 74, 0.2);
+    }
+
+    .contact-section h1 {
+      font-family: 'Allura', cursive;
+      font-size: 4rem;
+      color: #9e182b;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .contact-section p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #9e182b;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    label {
+      font-weight: 600;
+      color: #9e182b;
+      font-size: 1.1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: 2px solid #9e182b;
+      border-radius: 0.5rem;
+      resize: vertical;
+      font-family: 'Lora', serif;
+      color: #550000;
+      background-color: #fff3de;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #f2afbc;
+      box-shadow: 0 0 8px #f2afbc;
+    }
+
+    textarea {
+      min-height: 20rem;
+    }
+
+    button {
+      width: fit-content;
+      align-self: center;
+      background-color: #fff3de;
+      color: #9e182b;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 0.75rem 2rem;
+      border: 0.3rem double #9e182b;
+      border-radius: 0.7rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Lora', serif;
+    }
+
+    button:hover {
+      background-color: #9e182b;
+      color: #fff3de;
+      transform: scale(1.05);
+      border-color: #550000;
+    }
+   @media (max-width: 50rem) {
+  .contact-section {
+    margin: 3rem 2rem;
+    padding: 3rem 1rem;
+  }
+  
+  .contact-section h1 {
+    font-size: 8vw;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+  }
+  
+  button {
+    max-width: 100%;
+  }
+}
